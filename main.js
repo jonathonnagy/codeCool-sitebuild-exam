@@ -57,20 +57,24 @@ function loadEvent() {
 
 data.map((data, index) => container.innerHTML += `
 <div class='card'>
-	<div class='num-container'>
-		<p>${index+1} </p>
+	<div class='card-inside'>
+		<div class='num-container'>
+			<p>${index+1} </p>
+		</div>
+		<div>
+			<p class='sub'>${data.sub}</p>
+			<p class='title'>${data.title}</p>
+			<p class='text'>${data.text}</p>
+		</div>
 	</div>
-	<p class='sub'>${data.sub}</p>
-	<p class='title'>${data.title}</p>
-	<hr class='hr-card'>
-	<p class='text'>${data.text}</p>
 	<div class='button-container'>
-		<button class='button'><p class='button-text'>read more</p> <span class="material-icons-outlined arrow">
+		<button class='button'><p class='button-text'>read more</p> <span class="material-icons-outlined-arrow arrow">
 		arrow_forward
 		</span>
 		</button>
 	</div>
-</div>`)
+</div>
+`)
 
 
 }
