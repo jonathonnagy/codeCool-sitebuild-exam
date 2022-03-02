@@ -10,6 +10,9 @@
 	font-family: inherit;
 
 	text-decoration: none;
+
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Overpass', sans-serif;
 }
 
 ol,
@@ -81,17 +84,22 @@ header {
 	align-items: center;
 	max-width: 1280px;
 	gap: 100px 20px;
-	margin-top: 70px;
+	margin-top: 80px;
 }
 
-.num-container{
+.num-container {
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	right: 0;
 	top: 0;
 	width: 40px;
 	height: 40px;
 	font-size: 24px;
+	font-weight: bold;
 }
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -101,7 +109,8 @@ header {
 .card-inside {
 	position: relative;
 	width: 350px;
-	padding: 50px;
+	height: 400px;
+	padding: 40px;
 	border: 1px solid #1a24fb;
 	color: #1a24fb;
 }
@@ -109,6 +118,7 @@ header {
 .title {
 	font-size: 36px;
 	font-weight: bold;
+	padding: 20px 0;
 }
 
 .sub {
@@ -131,8 +141,13 @@ header {
 	font-size: 14px;
 }
 
+.button:hover {
+	background-color: #1a24fb;
+	color: #f8f7f3;
+}
 
-.material-icons-outlined-menu{
+
+.material-icons-outlined-menu {
 	font-family: 'Material Icons';
 	font-weight: normal;
 	font-style: normal;
@@ -145,6 +160,7 @@ header {
 	word-wrap: normal;
 	white-space: nowrap;
 	direction: ltr;
+	padding-right: 10px;
 
 
 	/* Support for all WebKit browsers. */
